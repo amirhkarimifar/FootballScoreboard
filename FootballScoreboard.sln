@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballScoreboard.Web", "FootballScoreboard.Web\FootballScoreboard.Web.csproj", "{AC526CFB-2871-4EB5-B8C4-76E85086EC84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B71263E1-EA20-42F8-A17F-B6D92643DA41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballScoreboard.Domain", "scr\FootballScoreboard.Domain\FootballScoreboard.Domain.csproj", "{4DC68305-D1F2-4700-B5E5-36B7B52FEB5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballScoreboard.Application", "scr\FootballScoreboard.Application\FootballScoreboard.Application.csproj", "{7209DC18-D0AB-4CE6-8526-6AC9AF6350AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballScoreboard.Infrastructure", "FootballScoreboard.Infrastructure\FootballScoreboard.Infrastructure.csproj", "{196367F6-FAF1-423D-8439-A785D840D2A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{34AB83C3-10EF-4CBB-A429-81362C93FDA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoreboardServiceTests", "Tests\ScoreboardServiceTests\ScoreboardServiceTests.csproj", "{91B5A7DC-786E-4442-86DD-F66589A83AA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC526CFB-2871-4EB5-B8C4-76E85086EC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC526CFB-2871-4EB5-B8C4-76E85086EC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC526CFB-2871-4EB5-B8C4-76E85086EC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC526CFB-2871-4EB5-B8C4-76E85086EC84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC68305-D1F2-4700-B5E5-36B7B52FEB5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC68305-D1F2-4700-B5E5-36B7B52FEB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC68305-D1F2-4700-B5E5-36B7B52FEB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC68305-D1F2-4700-B5E5-36B7B52FEB5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7209DC18-D0AB-4CE6-8526-6AC9AF6350AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7209DC18-D0AB-4CE6-8526-6AC9AF6350AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7209DC18-D0AB-4CE6-8526-6AC9AF6350AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7209DC18-D0AB-4CE6-8526-6AC9AF6350AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{196367F6-FAF1-423D-8439-A785D840D2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196367F6-FAF1-423D-8439-A785D840D2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{196367F6-FAF1-423D-8439-A785D840D2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196367F6-FAF1-423D-8439-A785D840D2A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B5A7DC-786E-4442-86DD-F66589A83AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B5A7DC-786E-4442-86DD-F66589A83AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B5A7DC-786E-4442-86DD-F66589A83AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B5A7DC-786E-4442-86DD-F66589A83AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4DC68305-D1F2-4700-B5E5-36B7B52FEB5E} = {B71263E1-EA20-42F8-A17F-B6D92643DA41}
+		{7209DC18-D0AB-4CE6-8526-6AC9AF6350AD} = {B71263E1-EA20-42F8-A17F-B6D92643DA41}
+		{196367F6-FAF1-423D-8439-A785D840D2A0} = {B71263E1-EA20-42F8-A17F-B6D92643DA41}
+		{91B5A7DC-786E-4442-86DD-F66589A83AA2} = {34AB83C3-10EF-4CBB-A429-81362C93FDA2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27961B48-B17C-4234-9FF8-BFB4C6712CC3}
+	EndGlobalSection
+EndGlobal
