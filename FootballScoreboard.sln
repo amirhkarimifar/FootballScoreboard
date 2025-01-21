@@ -3,19 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballScoreboard.Web", "FootballScoreboard.Web\FootballScoreboard.Web.csproj", "{AC526CFB-2871-4EB5-B8C4-76E85086EC84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballScoreboard.Web", "FootballScoreboard.Web\FootballScoreboard.Web.csproj", "{AC526CFB-2871-4EB5-B8C4-76E85086EC84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B71263E1-EA20-42F8-A17F-B6D92643DA41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballScoreboard.Domain", "src\FootballScoreboard.Domain\FootballScoreboard.Domain.csproj", "{4DC68305-D1F2-4700-B5E5-36B7B52FEB5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballScoreboard.Domain", "src\FootballScoreboard.Domain\FootballScoreboard.Domain.csproj", "{4DC68305-D1F2-4700-B5E5-36B7B52FEB5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballScoreboard.Application", "src\FootballScoreboard.Application\FootballScoreboard.Application.csproj", "{7209DC18-D0AB-4CE6-8526-6AC9AF6350AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballScoreboard.Application", "src\FootballScoreboard.Application\FootballScoreboard.Application.csproj", "{7209DC18-D0AB-4CE6-8526-6AC9AF6350AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballScoreboard.Infrastructure", "src\FootballScoreboard.Infrastructure\FootballScoreboard.Infrastructure.csproj", "{196367F6-FAF1-423D-8439-A785D840D2A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballScoreboard.Infrastructure", "src\FootballScoreboard.Infrastructure\FootballScoreboard.Infrastructure.csproj", "{196367F6-FAF1-423D-8439-A785D840D2A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{34AB83C3-10EF-4CBB-A429-81362C93FDA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoreboardServiceTests", "Tests\ScoreboardServiceTests\ScoreboardServiceTests.csproj", "{91B5A7DC-786E-4442-86DD-F66589A83AA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScoreboardServiceTests", "Tests\ScoreboardServiceTests\ScoreboardServiceTests.csproj", "{91B5A7DC-786E-4442-86DD-F66589A83AA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B182120-6D60-4837-BC75-E480BC63685B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
