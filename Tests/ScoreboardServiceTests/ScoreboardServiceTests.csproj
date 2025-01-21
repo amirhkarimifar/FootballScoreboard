@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\FootballScoreboard.Infrastructure\FootballScoreboard.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\FootballScoreboard.Infrastructure\FootballScoreboard.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

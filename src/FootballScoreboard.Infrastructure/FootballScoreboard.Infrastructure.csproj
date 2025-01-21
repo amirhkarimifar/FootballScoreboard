@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\scr\FootballScoreboard.Application\FootballScoreboard.Application.csproj" />
-    <ProjectReference Include="..\scr\FootballScoreboard.Domain\FootballScoreboard.Domain.csproj" />
+    <ProjectReference Include="..\FootballScoreboard.Application\FootballScoreboard.Application.csproj" />
+    <ProjectReference Include="..\FootballScoreboard.Domain\FootballScoreboard.Domain.csproj" />
   </ItemGroup>
 
 </Project>
