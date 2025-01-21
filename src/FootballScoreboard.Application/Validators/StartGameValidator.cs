@@ -2,7 +2,7 @@
 using FootballScoreboard.Application.DTOs;
 
 namespace FootballScoreboard.Application.Validators;
-public class StartGameValidator : AbstractValidator<StartGameDto>
+public class StartGameValidator : AbstractValidator<StartGameDto>, IDtoValidator
 {
     public StartGameValidator()
     {
