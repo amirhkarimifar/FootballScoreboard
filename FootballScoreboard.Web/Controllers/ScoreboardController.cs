@@ -1,4 +1,6 @@
-﻿using FootballScoreboard.Application.Interfaces;
+﻿using FootballScoreboard.Application.DTOs;
+using FootballScoreboard.Application.Interfaces;
+using FootballScoreboard.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FootballScoreboard.Web.Controllers;
@@ -13,21 +15,41 @@ public class ScoreboardController(IScoreboardService scoreboardService) : Contro
     [HttpPost]
     public IActionResult StartGame(string homeTeam, string awayTeam)
     {
-        scoreboardService.StartGame(homeTeam, awayTeam);
+        scoreboardService.StartGame(new StartGameDto {AwayTeam = awayTeam , HomeTeam = homeTeam});
         return Json(new { success = true, matches = scoreboardService.GetSummary() });
     }
 
     [HttpPost]
-    public IActionResult FinishGame(string homeTeam, string awayTeam)
+    public IActionResult FinishGame(Guid matchId)
     {
-        scoreboardService.FinishGame(homeTeam, awayTeam);
+        scoreboardService.FinishGame(matchId);
         return Json(new { success = true, matches = scoreboardService.GetSummary() });
     }
 
     [HttpPost]
-    public IActionResult UpdateScore(string homeTeam, string awayTeam, int homeScore, int awayScore)
+    public IActionResult UpdateScore(Guid matchId, int homeScore, int awayScore)
     {
-        scoreboardService.UpdateScore(homeTeam, awayTeam, homeScore, awayScore);
+        scoreboardService.UpdateScore(matchId, homeScore, awayScore);
+        return Json(new { success = true, matches = scoreboardService.GetSummary() });
+    }
+   
+    public IActionResult GetMatches()
+    {
+        var matches = scoreboardService.GetSummary();
+        return Ok(matches);
+    }
+
+    [HttpPost]
+    public IActionResult UpdateMatchStatus(Guid matchId, MatchStatus status)
+    {
+        scoreboardService.UpdateMatchStatus(matchId, status);
+        return Json(new { success = true, matches = scoreboardService.GetSummary() });
+    }
+
+    [HttpPost]
+    public IActionResult AddGameEvent(Guid matchId, string player, GameEventType eventType, bool isHomeTeam)
+    {
+        scoreboardService.AddGameEvent(new GameEventDto { EventType = eventType, IsHomeTeam = isHomeTeam, Player = player }, matchId);
         return Json(new { success = true, matches = scoreboardService.GetSummary() });
     }
 }

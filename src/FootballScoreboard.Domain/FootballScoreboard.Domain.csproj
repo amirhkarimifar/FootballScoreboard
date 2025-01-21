@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\scr\FootballScoreboard.Application\FootballScoreboard.Application.csproj" />
-    <ProjectReference Include="..\scr\FootballScoreboard.Domain\FootballScoreboard.Domain.csproj" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
   </ItemGroup>
 
 </Project>

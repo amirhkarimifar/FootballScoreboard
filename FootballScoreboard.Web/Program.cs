@@ -1,4 +1,5 @@
 using FootballScoreboard.Application;
+using FootballScoreboard.Domain;
 using FootballScoreboard.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddServices();
 builder.Services.AddInfrastructureServices();
+builder.Services.AddDomainServices();
 
 var app = builder.Build();
 
